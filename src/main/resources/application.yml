@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: fruits-logistics-api
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/fruits_logistics}
+    username: ${DB_USER:fruits_logistics}
+    password: ${DB_PASSWORD:}
+    hikari:
+      connection-timeout: 2000
+management:
+  endpoints:
+    web:
+      base-path: /api
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
