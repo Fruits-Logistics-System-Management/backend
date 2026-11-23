@@ -7,4 +7,4 @@ Spring Boot REST API for Java 21. Initialize PostgreSQL using the `database` rep
 .\mvnw.cmd spring-boot:run
 ```
 
-On macOS/Linux, use `./mvnw` instead. Request `GET http://localhost:8080/api/health` to check API and database availability. The database baseline is managed separately.
+On macOS/Linux, use `./mvnw` instead. Request `GET http://localhost:8080/api/health` to check API and database availability. If port 8080 is occupied, set `SERVER_PORT` and point the frontend's `API_PROXY_TARGET` to the new address. The database baseline is managed separately.
